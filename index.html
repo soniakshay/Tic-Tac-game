@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tic Tac</title>
+		 <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="game/script.js"></script>
+		<link rel="stylesheet" href="game/style.css">
+		<script src="game/wow.min.js"></script>
+		<link rel="stylesheet" href="game/animate.css" />
+		<script>
+		new WOW().init();
+		wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+		</script>
+<style>
+html, body{
+  height: 100%;
+}
+body { 
+			background-image: url(game/bg1.jpg);
+			background-position:center center;
+			background-attachment: fixed;
+			background-size:100% 100%;
+			overflow:hidden;
+}
+#one,#two{
+	width:40%;
+}
+#one
+{
+	margin-top:10%;
+}
+#two{
+	margin-top:2%;
+}
+
+@media only screen and (max-width:600px) {
+	#button
+	{
+		margin-top:60%;
+	}
+	#one,#two
+	{
+		width:70%;
+	}
+
+}
+
+</style>
+</head>
+	
+ <body  onload="load()" >
+			<audio controls loop autoplay style="display:none;">
+				<source src="game/bg.ogg" type="audio/ogg">
+				<source src="game/bg.mp3" type="audio/mpeg">
+			</audio>
+			<div id="main">
+				<div id="button" style="height:auto;width:auto;">
+					<center>
+				<a href="game/index.html"><img src="game/oneplayer.png" class="wow bounceInLeft img-responsive " id="one"></a>
+				<br>
+				<a href="game/index2.html"><img src="game/twoplayer.png"  class="wow bounceInRight img-responsive" id="two" ></a>
+				</div>
+			</div>
+					
+	</body>
+</html> 

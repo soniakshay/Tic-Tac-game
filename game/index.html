@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<title>Tic Tac</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="../icon.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+		<script src="wow.min.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="animate.css">
+		<script>
+		new WOW().init();
+		wow = new WOW(
+        {
+			boxClass:     'wow',      // default
+            animateClass: 'animated', // default
+            offset:       0,          // default
+            mobile:       true,       // default
+            live:         true        // default
+         }
+         )
+         wow.init();
+		
+	</script>
+	<style>
+	#info{
+		margin-left:95%;
+		margin-top:10px;
+		}
+		@media only screen and (max-width:600px)
+		{
+				#info{
+		margin-left:90%;
+		margin-top:10px;
+		}
+	
+		}
+	</style>
+	</head>
+	
+ <body  onload="load()">
+	<!-- audio -->
+			<audio controls loop autoplay style="display:none;">
+				<source src="bg.ogg" type="audio/ogg">
+				<source src="bg.mp3" type="audio/mpeg">
+			</audio>
+			<div id="info">
+				<a href="info.xml"><img src="infoicon.png" height="30px;" width="30px;"></a>
+			</div>
+	<!--pop winning division  -->
+			<div id="wining" class="wow rubberBand">
+				<div id="header" style="height:auto;">
+					<center>
+					<h1 id="status" style="letter-spacing:2px;background:#82230f;font-family:akki1;font-size:50px;color:rgb(225,202,168);"></h1>
+						<a href="index.html"><input type="button" value="Restart" id="restart"  style="background:#82230f;letter-spacing:2px;color:rgb(225,202,168);font-family:akki1;font-size:30px;"></a>
+				</div>
+			</div>
+	<!-- main div -->
+			<div id="main" >
+					<div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12"    >
+						<center>
+						<table id="table" class="wow bounceInDown" > 
+								<tr>
+									<tr>
+										<td><input type="Button" id="btn1" class="btn" onclick="btnclick(this,0)" style="border-right:7px solid;border-bottom:7px solid;border-color:#82230f;border-top:none;border-left:none;"></td>
+										<td><input type="Button" id="btn2" class="btn" onclick="btnclick(this,1)"  style="border-right:7px solid;border-bottom:7px solid;border-color:#82230f;border-top:none;border-left:none;"></td>
+										<td><input type="Button" id="btn3" class="btn" onclick="btnclick(this,2)" style="border-right:none;border-bottom:7px solid;border-color:#82230f;border-top:none;border-left:none;"></td>
+									</tr>
+									<tr>
+										<td><input type="Button" id="btn4" class="btn" onclick="btnclick(this,3)" style="border-right:7px solid;border-bottom:none;border-color:#82230f;border-top:none;border-left:none;"></td>
+										<td><input type="Button" id="btn5" class="btn" onclick="btnclick(this,4)" style="border-right:7px solid;border-bottom:none;border-color:#82230f;border-top:none;border-left:none;"></td>
+										<td><input type="Button" id="btn6" class="btn" onclick="btnclick(this,5) " style="border-right:none;border-bottom:none;;border-top:none;border-left:none;"></td>	
+									</tr>
+									<tr>
+										<td><input type="Button" id="btn7" class="btn" onclick="btnclick(this,6)" style="border-top:7px solid;border-right:7px solid;border-left:0px;border-bottom:none;border-color:#82230f;"></td>
+										<td><input type="Button" id="btn8" class="btn" onclick="btnclick(this,7)"style="border-top:7px solid;border-right:7px solid;border-left:none;;border-bottom:none;border-color:#82230f;"></td>
+										<td><input type="Button" id="btn9" class="btn" onclick="btnclick(this,8)" style="border-top:7px solid;border-right:none;border-left:none;border-bottom:none;border-color:#82230f;"></td>
+									</tr>
+							</table>
+						</center>
+					</div>
+			</div>
+	</body>
+</html> 

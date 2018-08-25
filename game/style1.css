@@ -1,0 +1,108 @@
+html, body{
+  height: 100%;
+}
+body { 
+	background-image: url(bg1.jpg);
+	background-position:center center;
+	background-attachment: fixed;
+	background-size:100% 100%;
+	overflow:hidden;
+}
+#table
+{
+ 
+	width: auto;
+	height:auto;
+	margin-top:10%;
+}
+
+	
+
+td
+{
+	height:100px;
+	width:100px;
+	padding:0px;
+	margin:0px;
+}
+.btn
+{
+}
+@font-face {
+    font-family:akki1;
+    src: url(akki.ttf);
+}
+
+td{
+}
+.btn
+{
+		color:#82230f;
+		padding:0px;
+		height:100%;
+		width:100%;
+		background:transparent;
+		font-size:75px;
+		font-family:akki1;
+}
+.btn:hover
+{
+		color:#82230f;
+}
+.btn:focus
+{
+		color:#82230f;
+}
+#hrank
+{
+	color:#82230f;
+	font-family:akki1;
+	font-size:50px;
+}
+#wining {
+
+	background-color:rgba(225,202,168,0.5);
+	background-position:center;
+	border:2px solid;
+	box-shadow:0px 0px 90px 20px;
+	z-index:1;
+	display:none; 
+    position:fixed;
+	width:80%;
+	height:50%;
+	left:10%;
+	top:25%;
+	margin:0px auto;
+}
+@media only screen and (max-width:600px) {
+    
+	#table
+	{
+	margin-top:50%;
+	}
+}	
+
+
+#restart
+{
+	margin-top:9%;
+	background:none;
+	border:none;
+	border:1px solid;
+	box-shadow:0px 0px 100px 0px ;
+	padding:5px 10px 5px 10px;
+}
+
+
+@media only screen and (max-width: 500px) {
+	#restart
+	{
+		margin-top:32%;
+		background:none;
+		border:none;
+		border:1px solid;
+		box-shadow:0px 0px 100px 0px ;
+		padding:5px 10px 5px 10px;
+	}
+}
+
